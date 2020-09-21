@@ -4,5 +4,8 @@
   "main": "index.js",
   "repository": "https://github.com/kaligrafy/civ6707a_a20_tp1.git",
   "author": "Pierre-Léo Bourbonnais <leo.bourbonnais@polymtl.ca>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  }
 }
