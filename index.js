@@ -12,9 +12,8 @@ fs.writeFileSync('bdd.json', JSON.stringify(monObjet));
 
 const contenuDeMonObjet = JSON.parse(fs.readFileSync('bdd.json'));
 
-console.log('mon objet:', contenuDeMonObjet);
+console.log('mon objet:', contenuDeMonObjet, { bus1: '23', bus2: '45'});
 
-/*
 const inquirer = require('inquirer');
 inquirer
   .prompt([
@@ -40,4 +39,4 @@ inquirer
       // Something else when wrong
     }
   });
-  */
+  
