@@ -9,6 +9,7 @@
     "start": "node index.js"
   },
   "dependencies": {
-    "inquirer": "^7.3.3"
+    "inquirer": "^7.3.3",
+    "node-fetch": "^2.6.1"
   }
 }
