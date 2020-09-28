@@ -1,20 +1,10 @@
 
-const fetch = require('node-fetch');
+
+import patateAuCari from './modules/fetchBixi.js';
+
 // url bixi: https://api-core.bixi.com/gbfs/en/station_information.json
 
-const urlBixi = 'https://api-core.bixi.com/gbfs/en/station_information.json';
 
-/*fetch(urlBixi).then(function(response) {
-  return response.json().then(function(jsonResponse) {
-    console.log(jsonResponse.data.stations[0]);
-  });
-});*/
-
-const maFonctionAsynchrone = async function() {
-  const bixiResponse = await fetch(urlBixi);
-  const jsonResponse = await bixiResponse.json();
-  return jsonResponse.data.stations[0];
-};
 
 const maPromesse = new Promise(function(resolve, reject) {
   const a = 23 + 45;
@@ -25,12 +15,13 @@ maPromesse.then(function(somme) {
   console.log('ma somme est' + somme);
 });
 
-maFonctionAsynchrone().then(function(result) {
+patateAuCari().then(function(result) {
   console.log(result);
 });
 
-console.log('Bonjour');
+//console.log('Bonjour');
 
+//process.exit(); // ctrl-c
 
 /*const monArray = [1,2,4,6,8,-3,45,-23];
 
@@ -68,7 +59,6 @@ console.log(mesBus.filter(function(bus) {
 }));*/
 
 //console.log(mesBus);
-
 
 
 /*console.log('Bienvenue dans mon TP1');
@@ -115,3 +105,4 @@ inquirer
   
 
   */
+
